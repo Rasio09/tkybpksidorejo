@@ -100,7 +100,15 @@ a:focus {
   position: relative;
 }
 
+.hero_img-container .img-logo{
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 
+.hero_section .hero-container .hero-home{
+  margin-bottom: 80px;
+}
 
 .top_container::before {
   content: "";
