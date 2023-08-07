@@ -33,8 +33,12 @@ body {
   font-weight: 500;
   transition: all 0.4s ease 0s;
 }
-
-
+/* 
+.img-footer{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
 
 .call_to-btn img {
   width: 18px;
@@ -101,9 +105,9 @@ a:focus {
 }
 
 .hero_img-container .img-logo{
-  width: 300px;
+  width: 500px;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .hero_section .hero-container .hero-home{
