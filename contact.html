@@ -11,10 +11,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
+  <link rel="icon" type="image/x-icon" href="images/logose.png">
   <title>TK YBPK SIDOREJO | CONTACT</title>
-
-
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -28,10 +26,6 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-
-
-
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
 
 
@@ -97,29 +91,29 @@
             </h2>
             <p style="margin-top: -30px; font-size: 12px;">Silahkan isi dan lengkapi form dibawah ini untuk malakukan pendaftaran secara online, form akan dikirimkan melalui nomor whatsapp</p>
           </div>
-          <form action="">
+          <form action="" id="form" method="post" target="_blank">
             <div class="contact_form-container">
               <div>
                 <div>
-                  <input type="text" placeholder="nama anak/peserta didik baru" required>
+                  <input type="text" placeholder="nama anak/peserta didik baru" required name="nama">
                 </div>
                 <div>
-                  <input type="text" placeholder="tempat/tanggal lahir" required>
+                  <input type="text" placeholder="tempat/tanggal lahir" required name="ttl">
                 </div>
                 <div>
-                  <input type="text" placeholder="nama orang tua (ayah)" required>
+                  <input type="text" placeholder="nama orang tua (ayah)" required name="ayah">
                 </div>
                 <div>
-                  <input type="text" placeholder="nama orang tua (ibu)" required>
+                  <input type="text" placeholder="nama orang tua (ibu)" required name="ibu">
                 </div>
                 <div>
-                  <input type="text" placeholder="alamat" required>
+                  <input type="text" placeholder="alamat" required name="alamat">
                 </div>
                 <div>
-                  <input type="text" placeholder="nomor hp/wa" required>
+                  <input type="text" placeholder="nomor hp/wa" required name="nohp">
                 </div>
                 <div class="mt-5">
-                  <button type="submit">
+                  <button type="submit" name="submit">
                     KIRIM VIA WA
                   </button>
                 </div>
@@ -166,7 +160,14 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="/js/scripts.js"></script>
 
+  <script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            daftar();
+        });
+  </script>
 
 </body>
 
